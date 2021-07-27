@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStockMarketStockService", "EStockMarketStockService\EStockMarketStockService.csproj", "{49BC811E-14E0-40D8-A20B-0AC30DE53CC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStockMarketStockService.Domain", "EStockMarketStockService.Domain\EStockMarketStockService.Domain.csproj", "{495C97FC-FE6C-4EA1-B0EB-88DFCDA914A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStockMarketStockService.Application", "EStockMarketStockService.Application\EStockMarketStockService.Application.csproj", "{74316198-2C19-49D8-8EAE-A5A07D6168E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStockMarketStockService.Infrastructure", "EStockMarketStockService.Infrastructure\EStockMarketStockService.Infrastructure.csproj", "{B509B0B6-80B9-41F6-8BBA-00FAB2EC71C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStockMarketStockService.Message.Receive", "EStockMarketStockService.Message.Receive\EStockMarketStockService.Message.Receive.csproj", "{34F382D8-23EA-43C7-A716-BF380BEAFDD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49BC811E-14E0-40D8-A20B-0AC30DE53CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49BC811E-14E0-40D8-A20B-0AC30DE53CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49BC811E-14E0-40D8-A20B-0AC30DE53CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49BC811E-14E0-40D8-A20B-0AC30DE53CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495C97FC-FE6C-4EA1-B0EB-88DFCDA914A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495C97FC-FE6C-4EA1-B0EB-88DFCDA914A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495C97FC-FE6C-4EA1-B0EB-88DFCDA914A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495C97FC-FE6C-4EA1-B0EB-88DFCDA914A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74316198-2C19-49D8-8EAE-A5A07D6168E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74316198-2C19-49D8-8EAE-A5A07D6168E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74316198-2C19-49D8-8EAE-A5A07D6168E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74316198-2C19-49D8-8EAE-A5A07D6168E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B509B0B6-80B9-41F6-8BBA-00FAB2EC71C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B509B0B6-80B9-41F6-8BBA-00FAB2EC71C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B509B0B6-80B9-41F6-8BBA-00FAB2EC71C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B509B0B6-80B9-41F6-8BBA-00FAB2EC71C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F382D8-23EA-43C7-A716-BF380BEAFDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F382D8-23EA-43C7-A716-BF380BEAFDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F382D8-23EA-43C7-A716-BF380BEAFDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F382D8-23EA-43C7-A716-BF380BEAFDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F243B2B-610A-4B9C-A0D0-4DE833B4FFB0}
+	EndGlobalSection
+EndGlobal
