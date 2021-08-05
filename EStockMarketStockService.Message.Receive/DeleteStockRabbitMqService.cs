@@ -4,6 +4,7 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using System;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -16,10 +17,8 @@ namespace EStockMarketStockService.Message.Receive
         private IConnection _connection;
         private readonly IStockRepository _stockRepository;
         private readonly IConfiguration _configuration;
-        private readonly string _hostname;
+        private readonly string _connectionUri;
         private readonly string _queueName;
-        private readonly string _username;
-        private readonly string _password;
 
         public DeleteStockRabbitMqService(IStockRepository stockRepository, IConfiguration configuration)
         {
@@ -28,10 +27,9 @@ namespace EStockMarketStockService.Message.Receive
 
             var configSection = _configuration.GetSection("RabbitMq");
 
-            _hostname = configSection.GetSection("Hostname").Value;
+            _connectionUri = configSection.GetSection("ConnectionUri").Value;
             _queueName = configSection.GetSection("QueueName").Value;
-            _username = configSection.GetSection("UserName").Value;
-            _password = configSection.GetSection("Password").Value;
+
             InitializeRabbitMqListener();
         }
 
@@ -39,9 +37,7 @@ namespace EStockMarketStockService.Message.Receive
         {
             var factory = new ConnectionFactory
             {
-                HostName = _hostname,
-                UserName = _username,
-                Password = _password
+                Uri = new Uri(_connectionUri)
             };
 
             _connection = factory.CreateConnection();

@@ -29,10 +29,9 @@ namespace EStockMarketStockService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var corsUrl = Configuration.GetSection("UIUrlforCors").Value;
             services.AddCors(c =>
             {
-                c.AddPolicy("AllowOrigin", options => options.WithOrigins(corsUrl).AllowAnyHeader());
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             });
 
             services.AddControllers();
@@ -62,9 +61,7 @@ namespace EStockMarketStockService
                 app.UseDeveloperExceptionPage();
             }
 
-
-            var corsUrl = Configuration.GetSection("UIUrlforCors").Value;
-            app.UseCors(options => options.WithOrigins(corsUrl).AllowAnyHeader());
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
             app.UseHttpsRedirection();
 
