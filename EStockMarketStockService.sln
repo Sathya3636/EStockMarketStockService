@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStockMarketStockService.In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStockMarketStockService.Message.Receive", "EStockMarketStockService.Message.Receive\EStockMarketStockService.Message.Receive.csproj", "{34F382D8-23EA-43C7-A716-BF380BEAFDD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStockMarketStockService.Test", "EStockMarketStockService.Test\EStockMarketStockService.Test.csproj", "{60C6A819-310D-405F-86E6-F05DC5F33C3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{34F382D8-23EA-43C7-A716-BF380BEAFDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34F382D8-23EA-43C7-A716-BF380BEAFDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34F382D8-23EA-43C7-A716-BF380BEAFDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C6A819-310D-405F-86E6-F05DC5F33C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C6A819-310D-405F-86E6-F05DC5F33C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C6A819-310D-405F-86E6-F05DC5F33C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C6A819-310D-405F-86E6-F05DC5F33C3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
